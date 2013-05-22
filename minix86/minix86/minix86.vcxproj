@@ -67,6 +67,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="mini\exec_buffer.cpp" />
+    <ClCompile Include="mini\main.cpp" />
     <ClCompile Include="mini\memory.cpp" />
   </ItemGroup>
   <ItemGroup>
