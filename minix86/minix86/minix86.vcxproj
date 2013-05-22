@@ -67,12 +67,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="mini\exec_buffer.cpp" />
-    <ClCompile Include="mini\main.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="mini\memory.cpp" />
+    <ClCompile Include="mini\x86\inst.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="mini\exec_buffer.h" />
     <ClInclude Include="mini\memory.h" />
+    <ClInclude Include="mini\x86\inst.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

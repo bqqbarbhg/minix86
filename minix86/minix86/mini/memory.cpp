@@ -7,7 +7,7 @@
 namespace mini {
 
 exec_ptr exec_alloc(size_t size) {
-	return (exec_ptr)VirtualAlloc(NULL, size, MEM_COMMIT | MEM_RESERVE, PAGE_READWRITE | PAGE_EXECUTE);
+	return (exec_ptr)VirtualAlloc(NULL, size, MEM_COMMIT | MEM_RESERVE, PAGE_EXECUTE_READWRITE);
 }
 exec_ptr exec_realloc(exec_ptr old, size_t size) {
 	// Get the old size
