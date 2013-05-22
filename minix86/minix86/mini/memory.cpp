@@ -4,6 +4,8 @@
 
 #include <Windows.h>
 
+namespace mini {
+
 exec_ptr exec_alloc(size_t size) {
 	return (exec_ptr)VirtualAlloc(NULL, size, MEM_COMMIT | MEM_RESERVE, PAGE_READWRITE | PAGE_EXECUTE);
 }
@@ -27,18 +29,6 @@ void exec_free(exec_ptr ptr) {
 	VirtualFree(ptr, 0, MEM_RELEASE);
 }
 
+}
+
 #endif
-
-ExecBuffer::ExecBuffer(size_t size)
-	: m_size(size)
-	, m_mem(exec_alloc(size))
-{
-}
-ExecBuffer::~ExecBuffer() {
-	exec_free(m_mem);
-}
-
-void ExecBuffer::resize(size_t size) {
-	m_size = size;
-	m_mem = exec_realloc(m_mem, size);
-}

@@ -15,13 +15,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="memory.cpp">
+    <ClCompile Include="mini\memory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mini\exec_buffer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="memory.h">
+    <ClInclude Include="mini\memory.h">
       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mini\exec_buffer.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

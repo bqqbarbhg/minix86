@@ -1,13 +1,9 @@
-#ifndef _MINIX86_MEMORY_H
-#define _MINIX86_MEMORY_H
+#ifndef _MINI_EXEC_BUFFER_H
+#define _MINI_EXEC_BUFFER_H
 
-#include <cstddef>
+#include <mini/memory.h>
 
-typedef unsigned char* exec_ptr;
-
-exec_ptr exec_alloc(size_t size);
-exec_ptr exec_realloc(exec_ptr ptr, size_t size);
-void exec_free(exec_ptr ptr);
+namespace mini {
 
 class ExecBuffer {
 public:
@@ -23,5 +19,7 @@ private:
 	size_t m_size;
 	exec_ptr m_mem;
 };
+
+}
 
 #endif
