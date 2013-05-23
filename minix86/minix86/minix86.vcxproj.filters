@@ -24,7 +24,7 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="mini\x86\inst.cpp">
+    <ClCompile Include="mini\x86\inst_old.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -35,8 +35,23 @@
     <ClInclude Include="mini\exec_buffer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="mini\x86\inst_old.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="mini\x86\inst.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="mini\bit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mini\lang\scan.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mini\lang\token.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="mini\x86\test.txt" />
   </ItemGroup>
 </Project>

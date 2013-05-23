@@ -69,12 +69,19 @@
     <ClCompile Include="mini\exec_buffer.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mini\memory.cpp" />
-    <ClCompile Include="mini\x86\inst.cpp" />
+    <ClCompile Include="mini\x86\inst_old.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="mini\exec_buffer.h" />
+    <ClInclude Include="mini\lang\scan.h" />
+    <ClInclude Include="mini\lang\token.h" />
     <ClInclude Include="mini\memory.h" />
+    <ClInclude Include="mini\bit.h" />
     <ClInclude Include="mini\x86\inst.h" />
+    <ClInclude Include="mini\x86\inst_old.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="mini\x86\test.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

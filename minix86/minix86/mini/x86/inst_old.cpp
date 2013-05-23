@@ -1,4 +1,4 @@
-#include "inst.h"
+#include "inst_old.h"
 namespace mini { namespace x86 {
 
 void write32(inst_byte*& buf, uint32_t val) {
